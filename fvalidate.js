@@ -12,7 +12,7 @@ function validatefields() {
   const regphone = /^[6-9][0-9]{9}$/;
   const regemail = /^([a-z0-9\.-]+)@([a-z0-9-]{3,30})\.([a-z]{2,8})(\.[a-z]{2,8})?$/i;
   //	userid/name	@ domainname 	.  extension    .anotherextension(optional)  case-insensitive
-  const regaddress = /^[a-zA-Z0-9][a-zA-Z0-9\/\-:,\. ]{10,180}$/i;
+  const regaddress = /^[a-zA-Z0-9][a-zA-Z0-9\/\-:,\. ]{10,180}$/i;//first letter of the address can't be any symbols
   const regcity = /^[a-zA-Z ]{4,35}$/i;
   const regstate = /^[a-zA-Z ]{4,40}$/i;
 
