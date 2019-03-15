@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class = "head">
+    	<h1>Sign up</h1>
+    </div>
+
+    <div id="form-container">
+    <form action="success.html" method="POST" onsubmit="return validatefields()">
+		
+        <div class="inp">
+		<marquee behaviour="scroll" direction="left" scrollamount="5" style="color: red;" width="80%">
+			<u>Note:</u> All the fields are <b>Case-Sensitive</b> 
+				except Email-Id. If you have any queries, contact us at help@example.com
+		</marquee>
+		</div>
+		
+        <div class="inp">
+        	<label>First Name:</label> 
+        	<input type="text" id="first" name="firstname" placeholder="Eg: Naveen"><br/>
+        	<span id="frst" class="error"> </span>
+        </div>
+
+        <div class="inp">
+        	<label>Last Name:</label> 
+        	<input type="text" id="last" name="lastname" placeholder="Eg: Agarwal"><br/>
+        	<span id="lst" class="error"></span>
+        </div>
+
+        <div class="inp">
+        	<label>Phone Number:</label>
+        	<input type="tel" name="phone" id="phone" placeholder="Eg: 9123432698"><br/>
+        	<span id="phn" class="error"></span>
+        </div>
+
+        <div class="inp">
+        	<label>Email-Id:</label> 
+        	<input type="text" name="emailid" id="email" placeholder="Eg: Naveen@gmail.com"><br/>
+        	<span id="eml" class="error"></span>
+        </div>
+
+        <div class="inp">
+	        <label>Address:</label> 
+	        <input type="text" name="address" id="address" placeholder=" H.no:213B, Mariana Homes"><br/>
+        	<span id="addr" class="error"></span>
+        </div>
+
+        <div class="inp">
+	        <label>City:</label>
+	        <input type="text" name="city" id="city" placeholder="Eg: Hyderabad"><br/>
+    		<span id="cty" class="error"></span>
+    	</div>
+
+    	<div class="inp">
+	        <label>State:</label> 
+	        <input type="text" name="state" id="state" placeholder="Eg: Telangana"><br/>
+        	<span id="stat" class="error"></span>
+        </div>
+
+    	<div id="button" class="inp">
+	        <input class = "btn" type="submit" value="Sign Up">
+    	</div>       
+    </form>
+	</div>
+	<script type="text/javascript" src="fvalidate.js"></script>
+
+    
+</body>
+</html>
